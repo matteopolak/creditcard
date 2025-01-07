@@ -1,0 +1,21 @@
+[package]
+name = "creditcard"
+version = "0.1.0"
+edition = "2024"
+description = "Zero-dependency credit card parser and validator."
+license = "MIT OR Apache-2.0"
+authors = ["Matthew Polak <contact@matteopolak.com>"]
+repository = "https://github.com/matteopolak/creditcard"
+keywords = ["validation", "validate", "no_std", "no_alloc"]
+categories = ["no-std", "no-std::no-alloc"]
+
+[dependencies]
+
+[dev-dependencies]
+card-validate = "2.4.0"
+criterion = "0.5"
+
+
+[[bench]]
+name = "parse"
+harness = false
